@@ -310,9 +310,6 @@ grid-area:a10;
         height: 150px;
         border-radius: 22px;    
     }
-    .carousel-item{
-        
-    }
     .links_media{
         width: 7%;
         height: 7%;
@@ -321,8 +318,6 @@ grid-area:a10;
 }
 
 @media only screen and (min-width:600px){
-    .titulo_container{     
-    }
     .grid_sup_main{
         height: 1900px;
         grid-template-columns: 30% 30% 30% ;
