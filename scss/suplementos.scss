@@ -1,0 +1,68 @@
+/* MAIN SUPLEMENTOS */
+
+.grid_sup_main{
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    
+    .grid_img{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+        .sup_img{
+                object-fit: cover ;
+                overflow: hidden;
+                }
+    }
+    
+    .grid_item{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    word-spacing: 5px;
+    
+            .tittle_item{
+                font-family: 'Montserrat', sans-serif;
+                        }
+            .grid_text{
+                font-family: 'Montserrat', sans-serif;  
+                        }
+    }
+}
+    
+    #img_uno{
+        grid-area:a1;
+    }
+    #texto_uno{
+        grid-area:a2;
+    }
+    
+    #img_dos{
+        grid-area:a3;
+    }
+    #texto_dos{
+        grid-area:a4;
+    }
+
+    #img_tres{
+        grid-area:a5;
+    }
+    #texto_tres{
+        grid-area:a6;
+    }
+
+    #img_cuatro{
+        grid-area:a7;
+    }
+    #texto_cuatro{
+        grid-area:a8;
+    }
+
+    #img_cinco{
+        grid-area:a9;
+    } 
+    #texto_cinco{
+        grid-area:a10;
+    }
+

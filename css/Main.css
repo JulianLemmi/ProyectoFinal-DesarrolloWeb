@@ -1,0 +1,281 @@
+/* IMPORTS TODAS LAS PAGINAS */
+/* MAIN INDEX*/
+#main {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  z-index: 1020px; }
+  #main .text_index {
+    height: fit-content;
+    padding-bottom: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px; }
+    #main .text_index .second-tittle {
+      text-align: center; }
+  #main .text-second-tittle {
+    font-display: auto;
+    text-indent: 25px;
+    text-align: center; }
+  #main .carousel {
+    align-items: center;
+    width: fit-content;
+    height: fit-content; }
+    #main .carousel .carousel-item {
+      max-width: 800px;
+      max-height: 800px;
+      width: 100%;
+      height: 100%; }
+    #main .carousel .carousel img {
+      width: 500px;
+      height: 600px; }
+  #main .marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    margin-top: 25px;
+    margin-top: 220px; }
+  #main .marquee span {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+    color: #c9c9c9;
+    font-family: nos; }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-55.25%); } }
+
+/* MAIN SUPLEMENTOS */
+.grid_sup_main {
+  display: grid;
+  align-content: space-around;
+  justify-content: center; }
+  .grid_sup_main .grid_img {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .grid_sup_main .grid_img .sup_img {
+      object-fit: cover;
+      overflow: hidden; }
+  .grid_sup_main .grid_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-spacing: 5px; }
+    .grid_sup_main .grid_item .tittle_item {
+      font-family: 'Montserrat', sans-serif; }
+    .grid_sup_main .grid_item .grid_text {
+      font-family: 'Montserrat', sans-serif; }
+
+#img_uno {
+  grid-area: a1; }
+
+#texto_uno {
+  grid-area: a2; }
+
+#img_dos {
+  grid-area: a3; }
+
+#texto_dos {
+  grid-area: a4; }
+
+#img_tres {
+  grid-area: a5; }
+
+#texto_tres {
+  grid-area: a6; }
+
+#img_cuatro {
+  grid-area: a7; }
+
+#texto_cuatro {
+  grid-area: a8; }
+
+#img_cinco {
+  grid-area: a9; }
+
+#texto_cinco {
+  grid-area: a10; }
+
+/* Promo main grid */
+.grid-promos-container {
+  width: 100%;
+  height: 100%;
+  background-color: #6262bf, #9d6565, #427242; }
+  .grid-promos-container h2 {
+    font-weight: bold;
+    font-size: 40px; }
+  .grid-promos-container .grid-promos {
+    display: grid;
+    height: 500px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 250px;
+    grid-template-areas: "t1 t2" "t1 t3"; }
+    .grid-promos-container .grid-promos .img-promo {
+      width: 100%;
+      height: 100%; }
+      .grid-promos-container .grid-promos .img-promo .promo-img {
+        display: flex;
+        width: 70%;
+        height: 80%;
+        align-content: center;
+        object-fit: contain; }
+
+#img-uno-promo {
+  grid-area: t1; }
+
+#img-dos-promo {
+  grid-area: t2; }
+
+#img-tres-promo {
+  grid-area: t3; }
+
+/* Header */
+#titulo_pagina {
+  margin-top: 20px; }
+
+#logo {
+  margin-top: 2px;
+  width: 60px;
+  height: 60px; }
+
+/* NAV */
+.navbar-brand {
+  margin-left: 10px;
+  font-weight: 1000; }
+  .navbar-brand .nav-conteiner {
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+  .navbar-brand .navegation_menu__div {
+    width: 100%;
+    height: 30px; }
+  .navbar-brand .navegation_menu__container_ul {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    padding-inline-start: 40px;
+    justify-content: space-evenly;
+    align-items: center; }
+  .navbar-brand .navegation__item {
+    list-style-type: none;
+    width: auto;
+    height: auto; }
+  .navbar-brand .menu {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold; }
+
+/* Body */
+* {
+  margin: 0%;
+  padding: 0%; }
+
+#body_index {
+  background-color: #838080;
+  font-family: monospace;
+  height: 100%;
+  width: 100%; }
+
+/* FOOTER */
+#footer-config {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 300px;
+  border-top: 5px white;
+  border-style: inset; }
+  #footer-config #top-fotter {
+    background-color: #434242;
+    width: 100%;
+    height: auto; }
+    #footer-config #top-fotter #div-fotter {
+      height: auto;
+      width: auto; }
+      #footer-config #top-fotter #div-fotter #titulo_footer {
+        font-size: 30px;
+        text-align: center; }
+        #footer-config #top-fotter #div-fotter #titulo_footer .color_footer {
+          color: #fafa11; }
+      #footer-config #top-fotter #div-fotter .footer {
+        background-color: #434242;
+        color: #d8d1d1;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+        margin: 0px; }
+    #footer-config #top-fotter .bottom_footer {
+      background-color: #272525;
+      color: #bdb9b9; }
+
+@media only screen and (max-width: 600px) {
+  /* INDEX MAIN */
+  .second-tittle {
+    font-size: 25px;
+    text-indent: 50px; }
+  .text-second-tittle {
+    font-size: 13px;
+    font-weight: 250;
+    word-spacing: 4px; }
+  /* GRID PAGINA SUPLEMENTOS */
+  .grid_sup_main {
+    height: 2000px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas: "a1 a2 a2" "a3 a4 a4" "a5 a6 a6" "a7 a8 a8" "a9 a10 a10"; }
+    .grid_sup_main .grid_img .sup_img {
+      width: 150px;
+      height: 150px;
+      border-radius: 22px; }
+    .grid_sup_main .grid_item .tittle_item {
+      font-size: 22px; }
+    .grid_sup_main .grid_item .grid_text {
+      font-size: 15px; }
+  .links_media {
+    width: 7%;
+    height: 7%; } }
+
+@media only screen and (min-width: 600px) {
+  /* INDEX MAIN */
+  .second-tittle {
+    font-size: 30px;
+    text-indent: 50px; }
+  .text-second-tittle {
+    font-size: 16px;
+    font-weight: 300;
+    word-spacing: 3px; }
+  /* GRID PAGINA SUPLEMENTOS */
+  .grid_sup_main {
+    height: 1900px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-areas: "a1 a2 a2" "a3 a4 a4" "a5 a6 a6" "a7 a8 a8" "a9 a10 a10"; }
+    .grid_sup_main .grid_img .sup_img {
+      width: 250px;
+      height: 80%;
+      border-radius: 30px; }
+    .grid_sup_main .grid_item .tittle_item {
+      font-size: 28px; }
+    .grid_sup_main .grid_item .grid_text {
+      font-size: 20px; }
+  /* lINKS MEDIA FOOTER */
+  .links_media {
+    width: 2%;
+    height: 2%; } }

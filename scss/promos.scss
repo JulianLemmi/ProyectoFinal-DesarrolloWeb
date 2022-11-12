@@ -1,0 +1,52 @@
+
+
+/* Promo main grid */
+
+
+$lista-colores: rgb(98, 98, 191), rgb(157, 101, 101), rgb(66, 114, 66);
+
+
+.grid-promos-container{
+    width: 100%;
+    height: 100%;
+    background-color: $lista-colores;
+
+    h2{
+        font-weight: bold;
+        font-size: 40px;   
+    }
+
+    .grid-promos{
+        display: grid;
+        height: 500px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 250px 250px;
+        grid-template-areas:"t1 t2"
+                            "t1 t3"
+        ;
+        .img-promo{
+            width: 100%;
+            height: 100%;
+
+            .promo-img{
+                display: flex;
+                width: 70%;
+                height: 80%;
+                align-content: center;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+    #img-uno-promo{
+        grid-area: t1;
+    }
+
+    #img-dos-promo{
+        grid-area: t2;
+    }
+
+    #img-tres-promo{
+        grid-area: t3;
+    }

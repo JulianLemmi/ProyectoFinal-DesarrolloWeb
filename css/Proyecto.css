@@ -1,10 +1,5 @@
 /* Header */
 
-
-
-
-
-
 #titulo_pagina{
     margin-top: 20px;  
 }
@@ -162,8 +157,8 @@ display: grid;
 display: flex;
 align-items: center;
 justify-content: center;
-
 }
+
 .tittle_item{
     font-family: 'Montserrat', sans-serif;
     }
