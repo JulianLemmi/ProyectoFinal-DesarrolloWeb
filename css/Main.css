@@ -108,37 +108,137 @@
   grid-area: a10; }
 
 /* Promo main grid */
-.grid-promos-container {
-  width: 100%;
-  height: 100%;
-  background-color: #6262bf, #9d6565, #427242; }
-  .grid-promos-container h2 {
-    font-weight: bold;
-    font-size: 40px; }
-  .grid-promos-container .grid-promos {
-    display: grid;
-    height: 500px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 250px 250px;
-    grid-template-areas: "t1 t2" "t1 t3"; }
-    .grid-promos-container .grid-promos .img-promo {
+#promos {
+  margin: 0%;
+  padding: 0%; }
+  #promos .grid-promos-container {
+    width: 100%;
+    height: 100%; }
+    #promos .grid-promos-container h2 {
+      font-weight: bold;
+      font-size: 40px;
       width: 100%;
-      height: 100%; }
-      .grid-promos-container .grid-promos .img-promo .promo-img {
-        display: flex;
-        width: 70%;
-        height: 80%;
-        align-content: center;
-        object-fit: contain; }
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif; }
+    #promos .grid-promos-container .grid-promos {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 300px 300px;
+      grid-template-areas: "t1 t2" "t1 t3"; }
+      #promos .grid-promos-container .grid-promos .img-promo-container {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex; }
+        #promos .grid-promos-container .grid-promos .img-promo-container .promo-img {
+          width: 70%;
+          height: 80%;
+          object-fit: contain;
+          border-radius: 30px; }
+    #promos .grid-promos-container p {
+      width: 100%;
+      height: 100%;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-weight: 500;
+      margin-top: 10px; }
+  #promos .img-uno-promo {
+    grid-area: t1;
+    background-color: #e1e5b9; }
+  #promos .img-dos-promo {
+    grid-area: t2;
+    background-color: beige; }
+  #promos .img-tres-promo {
+    grid-area: t3;
+    background-color: beige; }
 
-#img-uno-promo {
-  grid-area: t1; }
+/* Main Recetas */
+#titulo-recetas {
+  font-size: 72px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
 
-#img-dos-promo {
-  grid-area: t2; }
+.titulo-recetas {
+  font-size: 35px;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
 
-#img-tres-promo {
-  grid-area: t3; }
+.grid-container-recetas {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+  .grid-container-recetas .image-recetas-container {
+    object-fit: cover;
+    align-items: center;
+    height: 80%;
+    width: 80%; }
+    .grid-container-recetas .image-recetas-container .foto-recetas {
+      height: 80%;
+      width: 80%;
+      object-fit: cover;
+      border-radius: 10px; }
+  .grid-container-recetas .texto-recetas {
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: fit-content;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large; }
+    .grid-container-recetas .texto-recetas p {
+      overflow: hidden;
+      width: 80%;
+      height: 80%; }
+  .grid-container-recetas .tabla-recetas {
+    width: 70%;
+    height: 70%;
+    object-position: center; }
+  .grid-container-recetas #video-uno-recetas {
+    grid-area: t1; }
+  .grid-container-recetas #texto-uno-recetas {
+    grid-area: t2;
+    background-color: #95d3d3; }
+  .grid-container-recetas #tabla-uno-recetas {
+    grid-area: t3; }
+  .grid-container-recetas #video-dos-recetas {
+    grid-area: t4; }
+  .grid-container-recetas #texto-dos-recetas {
+    grid-area: t5;
+    background-color: #8e7272; }
+  .grid-container-recetas #tabla-dos-recetas {
+    grid-area: t6; }
+  .grid-container-recetas #video-tres-recetas {
+    grid-area: t7; }
+  .grid-container-recetas #texto-tres-recetas {
+    grid-area: t8;
+    background-color: #cdcdbf; }
+  .grid-container-recetas #tabla-tres-recetas {
+    grid-area: t9; }
+
+@media only screen and (max-width: 1000px) {
+  .grid-container-recetas {
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
+    grid-template-areas: "t1 t2" "t3 t3" "t4 t5" "t6 t6" "t7 t8" "t9 t9"; } }
+
+@media only screen and (min-width: 1000px) {
+  .grid-container-recetas {
+    grid-template-columns: 30% 30% 25%;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas: "t1 t2 t3" "t4 t5 t6" "t7 t8 t9"; } }
 
 /* Header */
 #titulo_pagina {

@@ -1,52 +1,68 @@
-
-
 /* Promo main grid */
+#promos{
+    margin: 0%;
+    padding: 0%;
 
+    .grid-promos-container{
+        width: 100%;
+        height: 100%;
 
-$lista-colores: rgb(98, 98, 191), rgb(157, 101, 101), rgb(66, 114, 66);
-
-
-.grid-promos-container{
-    width: 100%;
-    height: 100%;
-    background-color: $lista-colores;
-
-    h2{
+        h2{
         font-weight: bold;
-        font-size: 40px;   
-    }
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        }
 
-    .grid-promos{
-        display: grid;
-        height: 500px;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 250px 250px;
-        grid-template-areas:"t1 t2"
-                            "t1 t3"
-        ;
-        .img-promo{
+        .grid-promos{
+            display: grid; 
             width: 100%;
-            height: 100%;
-
-            .promo-img{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 300px 300px;
+            grid-template-areas:"t1 t2"
+                                "t1 t3"
+            ;
+            .img-promo-container{
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
                 display: flex;
-                width: 70%;
-                height: 80%;
-                align-content: center;
-                object-fit: contain;
+                
+                .promo-img{
+                    width: 70%;
+                    height: 80%;
+                    object-fit: contain;
+                    border-radius: 30px;
+                }
             }
         }
+        p{
+            width: 100%;
+            height: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+    }
+    .img-uno-promo{
+        grid-area: t1;
+        background-color: rgb(225, 229, 185)
+    }
+
+    .img-dos-promo{
+        grid-area: t2;
+        background-color: beige;
+    }
+
+    .img-tres-promo{
+        grid-area: t3;
+        background-color: beige;
     }
 }
-
-    #img-uno-promo{
-        grid-area: t1;
-    }
-
-    #img-dos-promo{
-        grid-area: t2;
-    }
-
-    #img-tres-promo{
-        grid-area: t3;
-    }
