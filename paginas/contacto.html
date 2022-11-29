@@ -40,23 +40,29 @@
         </nav>
     </header>
 
-    <main>
-        <div>
-            <form action="Contacto">
-                <fieldset>
-                    <legend>Datos Personales</legend>
-                    <label for="Nombre_Usuario">Usuario</label>
-                    <input type="text" placeholder="ingrese su nombre" id="Nombre_Usuario">
-                    <br>
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="email" placeholder="ingrese su email" >
-                    <br>
-                    <label for="Comentario">Dejanos tu Comentario</label>
-                    <input type="text" placeholder="Escriba aqui">
-                </fieldset>
-            </form>
+    <main id="contacto">
+        <h1>CONTACTANOS</h1>
+        <form data-aos="fade-up">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label texto-contacto">Direccion Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text texto-contacto">Nunca se lo mostraremos a alguien.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label texto-contacto">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label texto-contacto" for="exampleCheck1">Permanezca logeado</label>
+            </div>
+            <button type="submit" class="btn btn-primary texto-contacto">Enviar</button>
+        </form>
+        <p data-aos="fade-left">Para contactarte con nosotros podes llamar al 2234558888 o dirigirte a esta pagina <a href="https://www.instagram.com/gopowergy/">https://www.instagram.com/gopowergy/</a></p>
+        <div class="iframe-maps" data-aos="fade-right">
+            <h2>Nuestra Ubicacion!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1111.4782113392207!2d-57.55433523933043!3d-38.00663835572768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dea735b5d89f%3A0x4677cd2f0fd562ae!2sRawson%202761%2C%20B7600FFG%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1669743776159!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
         </div>
-
     </main>
     
     <footer id="footer-config" >        
@@ -86,7 +92,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 </body>
 

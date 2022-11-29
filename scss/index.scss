@@ -14,11 +14,15 @@
         justify-content: center;
         flex-direction: column;
         width: 90%;
-        font-family:'Montserrat', sans-serif;
+        font-family:'Times New Roman', Times, serif;
         margin-top: 20px;
     
         .second-tittle  {
             text-align: center;
+            h2{
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+            }
                         }
     }
 
@@ -26,36 +30,41 @@
         font-display: auto;
         text-indent: 25px;
         text-align: center;
+        width: 100%;
+        #texto{
+            font-weight: 400;
+            font-family: 'Times New Roman', Times, serif;
+        }
     }
 
 
-.carousel{
-    align-items: center;
-    width: fit-content;
-    height: fit-content;
+    .carousel{
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
 
-        .carousel-item{
-            max-width: 800px;
-            max-height: 800px;
-            width: 100%;
-            height: 100%;
-        }
-        .carousel img{
-            width: 500px;
-            height: 600px;
-        }
-}
-.marquee {
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    background-color: black;
-    margin-top: 25px;
-    margin-top: 220px;
-}
+            .carousel-item{
+                max-width: 800px;
+                max-height: 800px;
+                width: 100%;
+                height: 100%;
+            }
+            .carousel img{
+                width: 500px;
+                height: 600px;
+            }
+    }
+    .marquee {
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        background-color: black;
+        margin-top: 25px;
+        margin-top: 220px;
+    }
         .marquee span {
             display: inline-block;
             animation: marquee 10s linear infinite;
@@ -69,5 +78,21 @@
             transform: translateX(0); }
             100% {
             transform: translateX(-55.25%); } 
+        }
+}
+@media only screen and (max-width:600px){
+    .second-tittle h2{
+        font-size: 30px;
+    }
+    #texto{
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width:600px){
+    .second-tittle h2{
+        font-size: 40px;
+    }
+    #texto{
+        font-size: 17px;
     }
 }
