@@ -5,6 +5,7 @@
     align-content: space-around;
     justify-content: center;
     
+
     .grid_img{ 
     display: flex;
     align-items: center;
@@ -22,17 +23,21 @@
     justify-content:center;
     word-spacing: 5px;
     
+    
+            
             .tittle_item{
                 font-family: 'Montserrat', sans-serif;
                         }
+            
             .grid_text{
-                font-family: 'Montserrat', sans-serif;  
+                font-family: 'Montserrat', sans-serif;
                         }
     }
 }
     
     #img_uno{
         grid-area:a1;
+        
     }
     #texto_uno{
         grid-area:a2;
@@ -41,6 +46,7 @@
     
     #img_dos{
         grid-area:a3;
+        
     }
     #texto_dos{
         grid-area:a4;
@@ -49,6 +55,7 @@
 
     #img_tres{
         grid-area:a5;
+        
     }
     #texto_tres{
         grid-area:a6;
@@ -57,6 +64,7 @@
 
     #img_cuatro{
         grid-area:a7;
+        
     }
     #texto_cuatro{
         grid-area:a8;
@@ -65,9 +73,119 @@
 
     #img_cinco{
         grid-area:a9;
+        
     } 
     #texto_cinco{
         grid-area:a10;
         background-color: burlywood;
     }
+    @media only screen and (max-width:600px){
 
+        /* GRID PAGINA SUPLEMENTOS */
+    
+        .grid_sup_main{
+            height: 1900px;
+            grid-template-columns: 30% 30% 30% ;
+            grid-template-rows: 380px 380px 380px 380px 380px;
+            grid-template-areas:
+            "a1 a2 a2"
+            "a3 a4 a4"
+            "a5 a6 a6"
+            "a7 a8 a8"
+            "a9 a10 a10";
+            .grid_img{            
+                
+                .sup_img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 22px;    
+                }
+            }
+            .grid_item{
+                
+                height: fit-content;
+
+                .tittle_item{
+                font-size: 22px;    
+                }
+    
+                .grid_text{
+                    font-size: 15px;
+                }
+            }
+        }
+    
+            .links_media{
+                width: 7%;
+                height: 7%;
+            }
+            
+    }
+
+    @media only screen and (min-width:600px){
+
+        /* GRID PAGINA SUPLEMENTOS */
+    
+        .grid_sup_main{
+            height: 2500px;
+            grid-template-columns: 30% 30% 30% ;
+            grid-template-rows: 500px 500px 500px 500px 500px;
+            grid-template-areas:
+            "a1 a2 a2"
+            "a3 a4 a4"
+            "a5 a6 a6"
+            "a7 a8 a8"
+            "a9 a10 a10";
+            .grid_img{            
+                
+                .sup_img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 0px;    
+                }
+            }
+            .grid_item{
+                
+                
+                .tittle_item{
+                font-size: 28px;    
+                }
+    
+                .grid_text{
+                    font-size: 18px;
+                }
+            }
+        }
+        
+        #img_uno{
+            background-color: rgb(246, 236, 224);
+        }
+        
+        #img_dos{
+            grid-area:a3;
+            background-color: greenyellow;
+        }
+        
+    
+        #img_tres{
+            grid-area:a5;
+            background-color: rgb(175, 143, 74);
+        }
+        
+    
+        #img_cuatro{
+            grid-area:a7;
+            background-color: azure;
+        }
+        
+    
+        #img_cinco{
+            grid-area:a9;
+            background-color: burlywood;
+        } 
+    
+            .links_media{
+                width: 7%;
+                height: 7%;
+            }
+    }

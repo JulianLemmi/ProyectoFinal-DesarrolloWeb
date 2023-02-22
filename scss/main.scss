@@ -125,18 +125,6 @@
 
 @media only screen and (max-width:600px){
 
-    /* INDEX MAIN */
-
-    .second-tittle{
-        font-size: 25px;
-        text-indent: 50px;
-    }
-
-    .text-second-tittle{
-        font-size: 13px;
-        font-weight: 250; 
-        word-spacing: 4px;      
-    }
     /* GRID PAGINA SUPLEMENTOS */
 
     .grid_sup_main{
@@ -179,54 +167,9 @@
 @media only screen and (min-width:600px){
     /* INDEX MAIN */
 
-    .second-tittle{
-        font-size: 30px;
-        text-indent: 50px;
-    }
-
-    .text-second-tittle{
-        font-size: 16px;
-        font-weight: 300; 
-        word-spacing: 3px;      
-    }
-
-
-    /* GRID PAGINA SUPLEMENTOS */
-    .grid_sup_main{
-        height: 1900px;
-        grid-template-columns: 30% 30% 30% ;
-        grid-template-rows: 300px 300px 300px 300px 300px;
-        grid-template-areas:"a1 a2 a2"
-                            "a3 a4 a4"
-                            "a5 a6 a6"
-                            "a7 a8 a8"
-                            "a9 a10 a10";
-                            
-        .grid_img{            
-            
-            .sup_img{
-                width: 250px;
-                height: 80%;
-                border-radius: 30px;    
-            }
-        }
-        .grid_item{
-            
-            
-            .tittle_item{
-            font-size: 28px;    
-            }
-
-            .grid_text{
-                font-size: 20px;
-            }
-        }
-    }
-    /* lINKS MEDIA FOOTER */
-    
     .links_media{
-        width: 2%;
-        height: 2%;
-    }
-}
+            width: 3%;
+            height: 3%;
+        }
+}   
 
